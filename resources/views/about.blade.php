@@ -38,7 +38,7 @@
         <div class="about__container bd-grid">            
             <div>
                 <h2 class="about__subtitle">I'm Rakhat</h2>
-                <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
             </div>                                   
         </div>
     </section>

@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
 
+use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,8 +46,5 @@ Route::get('/post/create', function () {
     ]);
 });
 
-Route::get('/post', function () {
-    $post = Post::find(1);
-    return $post;
-});
+Route::get('/post', [PostController::class, 'index']);
 

@@ -39,12 +39,10 @@ Route::get('/contact', function () {
 });
 
 
-Route::get('/post/create', function () {
-    DB::table('post')->insert([
-        'title' => 'My title',
-        'body' => 'My body'
-    ]);
+Route::get('post', [PostController::class, 'index']);
+
+Route::get('post/create', function() {
+    return view('blog.create');
 });
 
-Route::get('/post', [PostController::class, 'index']);
-
+Route::post('post/create', [PostController::class, 'store'])->name('add-post');

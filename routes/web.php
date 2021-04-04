@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Post;
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +49,5 @@ Route::get('post/create', function() {
 Route::post('post/create', [PostController::class, 'store'])->name('add-post');
 
 Route::get('post/{id}', [PostController::class, 'get_post']);
+
+Route::get('mail/send', [MailController::class, 'send']);

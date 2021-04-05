@@ -7,6 +7,7 @@ use App\Models\Post;
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,3 +52,8 @@ Route::post('post/create', [PostController::class, 'store'])->name('add-post');
 Route::get('post/{id}', [PostController::class, 'get_post']);
 
 Route::get('mail/send', [MailController::class, 'send']);
+
+
+Route::get('user', [UserController::class, 'index']);
+
+Route::post('add-user', [UserController::class, 'store'])->name('add-user');

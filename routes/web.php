@@ -57,3 +57,9 @@ Route::get('mail/send', [MailController::class, 'send']);
 Route::get('user', [UserController::class, 'index']);
 
 Route::post('add-user', [UserController::class, 'store'])->name('add-user');
+
+
+Route::get('/{lang}', function ($lang){
+    App::setlocale($lang);
+    return view('index');
+});
